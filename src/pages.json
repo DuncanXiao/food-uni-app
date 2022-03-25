@@ -14,6 +14,23 @@
 	"pages": [
 		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/tabBar/home/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"bounce": "vertical",
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#FFFFFF"
+						}]
+					}
+				}
+			}
+		},
+		{
 			"path": "pages/tabBar/component/component",
 			"style": {
 				"navigationBarTitleText": "内置组件",
@@ -1312,27 +1329,50 @@
 		"borderStyle": "black",
 		"backgroundColor": "#F8F8F8",
 		"list": [{
-				"pagePath": "pages/tabBar/component/component",
-				"iconPath": "static/component.png",
-				"selectedIconPath": "static/componentHL.png",
-				"text": "内置组件"
+				"pagePath": "pages/tabBar/home/index",
+				"iconPath": "static/icons/HOME.png",
+				"selectedIconPath": "static/icons/HOME-fill.png",
+				"text": "首页"
 			},
 			{
 				"pagePath": "pages/tabBar/API/API",
-				"iconPath": "static/api.png",
-				"selectedIconPath": "static/apiHL.png",
+				"iconPath": "static/icons/yinliao.png",
+				"selectedIconPath": "static/icons/yinliao-fill.png",
 				"text": "接口"
 			}, {
 				"pagePath": "pages/tabBar/extUI/extUI",
-				"iconPath": "static/extui.png",
-				"selectedIconPath": "static/extuiHL.png",
+				"iconPath": "static/icons/dingdan.png",
+				"selectedIconPath": "static/icons/dingdan-fill.png",
 				"text": "扩展组件"
 			}, {
 				"pagePath": "pages/tabBar/template/template",
-				"iconPath": "static/template.png",
-				"selectedIconPath": "static/templateHL.png",
+				"iconPath": "static/icons/wode.png",
+				"selectedIconPath": "static/icons/wode-fill.png",
 				"text": "模板"
 			}
 		]
+		// "list": [{
+		// 		"pagePath": "pages/tabBar/component/component",
+		// 		"iconPath": "static/component.png",
+		// 		"selectedIconPath": "static/componentHL.png",
+		// 		"text": "内置组件"
+		// 	},
+		// 	{
+		// 		"pagePath": "pages/tabBar/API/API",
+		// 		"iconPath": "static/api.png",
+		// 		"selectedIconPath": "static/apiHL.png",
+		// 		"text": "接口"
+		// 	}, {
+		// 		"pagePath": "pages/tabBar/extUI/extUI",
+		// 		"iconPath": "static/extui.png",
+		// 		"selectedIconPath": "static/extuiHL.png",
+		// 		"text": "扩展组件"
+		// 	}, {
+		// 		"pagePath": "pages/tabBar/template/template",
+		// 		"iconPath": "static/template.png",
+		// 		"selectedIconPath": "static/templateHL.png",
+		// 		"text": "模板"
+		// 	}
+		// ]
 	}
 }

@@ -1,0 +1,41 @@
+<template>
+    <view class="uni-container">
+      HOME
+      {{userInfo.name}}
+      <button @click="login">登录</button>
+    </view>
+</template>
+
+<script>
+	import {
+		mapState,
+		mapMutations,
+		mapActions
+	} from 'vuex'
+  export default {
+    components: {
+    },
+		computed: {
+			...mapState({
+        userInfo: state => state.common.userInfo
+      })
+		},
+    props: {
+      hasLeftWin: {
+        type: Boolean
+      },
+      leftWinActive: {
+        type: String
+      }
+    },
+    onShow: function() {
+      console.log('globalData: ', this.userInfo)
+    },
+    methods: {
+      ...mapActions('common', ['login'])
+    }
+  };
+</script>
+
+<style>
+</style>
